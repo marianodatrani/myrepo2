@@ -15,3 +15,13 @@ ggplot2::ggplot(mtcars, aes(wt, mpg))+
     ## `geom_smooth()` using formula 'y ~ x'
 
 ![](testdoc_github_markdown_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+
+``` r
+ggplot2::ggplot(mtcars, aes(qsec, mpg))+
+  geom_point()+
+  geom_smooth(method = "lm", se=F)
+```
+
+    ## `geom_smooth()` using formula 'y ~ x'
+
+![](testdoc_github_markdown_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
