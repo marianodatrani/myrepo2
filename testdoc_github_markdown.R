@@ -1,0 +1,23 @@
+#'---
+#'title: "Test doc for github-markdown"
+#'output: 
+#'  github_document
+#'date: '2022-08-11'
+#'---
+
+#+ r plot1
+data("mtcars")
+
+library(ggplot2)
+
+ggplot2::ggplot(mtcars, aes(wt, mpg))+
+  geom_point()+
+  geom_smooth(method = "lm", se=F)
+
+
+#+ r plot2
+ggplot2::ggplot(mtcars, aes(qsec, mpg))+
+  geom_point()+
+  geom_smooth(method = "lm", se=F)
+
+
