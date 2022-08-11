@@ -15,3 +15,9 @@ ggplot2::ggplot(mtcars, aes(wt, mpg))+
   geom_smooth(method = "lm", se=F)
 ```
 
+```{r}
+ggplot2::ggplot(mtcars, aes(qsec, mpg))+
+  geom_point()+
+  geom_smooth(method = "lm", se=F)
+```
+
